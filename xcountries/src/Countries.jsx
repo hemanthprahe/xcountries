@@ -4,7 +4,7 @@ const Countries = () => {
     let [xcountries,setXcountries] = useState([]);
     
     useEffect(()=>{
-        fetch("https://xcountries-backend.azurewebsites.net/all")
+        fetch("https://restcountries.com/v3.1/all")
         .then((res)=>res.json())
         .then((data)=>setXcountries(data))
         .catch((err)=>console.error("Error fetching data",err))
