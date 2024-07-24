@@ -39,7 +39,7 @@ const Countries = () => {
     <div style={containerStyle}>
         {xcountries.map((country)=>(
             <div key={country.cca3} style={cardStyle}>
-                <img src={country.flags.png} alt={Flag of {country.name.common}} style={imageStyle}/>
+                <img src={country.flags.png} alt={`Flag of {country.name.common}`} style={imageStyle}/>
                 <h2>{country.name.common}</h2>
             </div>
         ))}
